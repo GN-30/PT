@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+         body{
+            font-family: Bree Serif;
+         }
+         img{
+            float: left;
+            width: 170px;
+            height: 248px;
+            margin-left: -20px;
+            margin-top: -20px;
+            cursor: pointer;
+            border-radius: 10px;
+
+         }
+         img:hover{
+            border: 1.5px solid tomato;
+            transition: 0.10s ease-in-out;
+         }
+         .inner-box{
+            margin-left: 170px;
+            margin-top: -5px;
+         }
+         .btn{
+            font-family: Bree Serif;
+            background-color: rgb(59, 59, 245);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+         }
+         h3{
+            color:  #183b56;
+            
+         }
+         .card{
+    margin-left: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    cursor: pointer;    
+}
+.card:hover{
+    box-shadow: 0 8px 20px tomato;
+}
+h2{
+    margin-left: 10px;
+    font-family: Bree Serif;
+    color: black;
+    margin-top: 20px;
+}
+.img1{
+    float: left;
+    width: 170px;
+    height: 200px;}
+.card1{
+    margin-left: 5px;
+    background-color:#1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    cursor: pointer;
+}
+.card1:hover{
+    box-shadow: 0 8px 20px White;}
+
+    </style>
+</head>
+<body>
+    <div class="card" style="background-color: #1b1b1b; box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); justify-self: center;">
+    <h2 style="color: #ffffff;">Popular Book</h2>
+    <div class="card">
+        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/book-apj-img.png" alt="kalam">
+        <div class="inner-box">
+        <h3>Wings of Fire</h3>
+        <h4>An Autobiography of<br> Abdul Kalam</h4>
+        <p>By Arun Tiwari</p>
+        <button class="btn">Read Now</button>
+        </div>
+    </div>
+
+        <h2 style="color: white;">Recommended Books</h2>
+        <div class="card1">
+        <img class="img1" style="margin-top: -19px;" src=" https://d2clawv67efefq.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png" alt="chetan">
+        <div class="inner-box">
+        <h3 style="color: #ffffff;">The 3 Mistakes of My Life</h3>
+        <p style="color: #ffffff;"> Indian Authur <br>By Chetan Bhagat</p>
+        <button class="btn">Read Now</button>
+        </div>
+        </div>
+        <br>
+    <div class="card1">
+        <img class="img1" style="height: 207px;" src=" https://d2clawv67efefq.cloudfront.net/ccbp-static-website/harrypotter-img.png" alt="rich">
+        <div class="inner-box">
+        <h3 style="color: white;">Harry Potter</h3>
+        <h4 style="color: white;">and the Sorcerers's stone <br>by J.K Rouling</h4>
+        <button class="btn">Read Now</button>
+        </div>
+        </div>    
+    </div>
+</body>
+</html>
