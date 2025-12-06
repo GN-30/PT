@@ -77,9 +77,83 @@ h2{
 .card1:hover{
     box-shadow: 0 8px 20px White;}
 
+@media all and (min-width: 700px) {
+             body{
+            font-family: Bree Serif;
+            background-color: #1b1b1b;
+         }
+         img{
+            float: left;
+            width: 170px;
+            height: 248px;
+            margin-left: -20px;
+            margin-top: -20px;
+            cursor: pointer;
+            border-radius: 10px;
+
+         }
+         img:hover{
+            border: 1.5px solid tomato;
+            transition: 0.10s ease-in-out;
+         }
+         .inner-box{
+            margin-left: 170px;
+            margin-top: -5px;
+         }
+         .btn{
+            font-family: Bree Serif;
+            background-color: rgb(59, 59, 245);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+         }
+         h3{
+            color:  #183b56;
+            
+         }
+         .card{
+    margin-left: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    cursor: pointer;    
+}
+.card:hover{
+    box-shadow: 0 8px 20px tomato;
+}
+h2{
+    margin-left: 10px;
+    font-family: Bree Serif;
+    color: black;
+    margin-top: 20px;
+}
+
+.img1{
+    float: left;
+    width: 170px;
+    height: 200px;}
+.card1{
+    margin-left: 5px;
+    background-color:#1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    cursor: pointer;
+}
+.card1:hover{
+    box-shadow: 0 8px 20px White;}
+
+}  
+
     </style>
 </head>
-<body>
+<body style="background-color: aqua;">
     <div class="card" style="background-color: #1b1b1b; box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); justify-self: center;  box-shadow: 0 8px 20px white;">
     <h2 style="color: #ffffff;">Popular Book</h2>
     <div class="card">
@@ -98,7 +172,7 @@ h2{
         <div class="inner-box">
         <h3 style="color: #ffffff;">The 3 Mistakes of My Life</h3>
         <p style="color: #ffffff;"> Indian Authur <br>By Chetan Bhagat</p>
-        <button class="btn">Read Now</button>
+        <button class="btn" onclick="clicked()">Read Now</button>
         </div>
         </div>
         <br>
@@ -111,5 +185,6 @@ h2{
         </div>
         </div>    
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

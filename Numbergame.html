@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+        button{
+    background-color: rgb(128, 255, 0); 
+    border: 1.9px hidden black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 65px;
+}
+button:hover{
+    border: 1.5px groove tomato;
+    transform: scale3d(1.5px);
+    transition: 0.10s ease-in-out;
+    box-shadow: 0 8px 20px rgba(233, 9, 9, 0.2);
+}
+input{
+    background-color: rgb(119, 255, 0); 
+    border: 1.9px hidden black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    ;
+}
+input:hover{
+    border: 1.5px groove rgb(56, 65,78);
+    transform: scale(11.5px);
+    transition: 0.5s ease-in-out;
+}
+     .card{
+    width: 250px;
+    height: 250px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(20, 19, 19, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(15, 14, 14, 0.3);
+    box-shadow: 0 8px 20px rgba(233, 11, 148, 0.2);
+    
+    
+    cursor: pointer;
+
+}
+.card:hover{
+    box-shadow: 0 8px 20px tomato;
+    transform: scale(1.5px);
+    transition: 0.10s ease-in-out;}
+    </style>
+</head>
+<body>
+    <div class="card">
+    <h1 style="font-family: Bree serif; color: chocolate; text-shadow: 0cqb; margin-top: -10px;">Number Guessing Game</h1>
+    <p style="font-family: Bree serif; color: rgb(56, 65,78);">Guess a number between 1 and 100</p>
+    <input type="number" id="num1" placeholder="Value">
+    <button onclick="clicked()">Submit</button>
+    
+    <script>
+     let randomNum=Math.floor(Math.random()*100)+1;
+      function clicked(){
+        let num1=document.getElementById("num1").value;
+       
+        if (num1>randomNum){
+          alert("Your number is greater than the random number" + randomNum);
+        }
+        else if (num1<randomNum){
+            alert("your number is less than the random number" + randomNum);
+
+        }
+        else if(num1==randomNum){
+            alert("You WON!! the number matched" + randomNum);
+        }
+        
+        else{
+          alert("You lose! The number was " + randomNum);
+        }
+      }
+    </script>
+    </div>
+</body>
+</html>

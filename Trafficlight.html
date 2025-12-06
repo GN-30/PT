@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inner-box{
+    width: 150px;
+    height: 250px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(20, 19, 19, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(15, 14, 14, 0.3);
+    box-shadow: 0 8px 20px rgba(233, 11, 148, 0.2);
+justify-content: center;
+    align-items: center;}
+    p{
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    button{
+    background-color: rgb(128, 255, 0); 
+    border: 1.9px solid black;
+    align-items: center;
+    align-self:center ;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+    height: 30px;
+    margin: 5px 5px 5px 5px;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 780px;
+    margin-top: -125px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    }
+    button:hover{
+    box-shadow:0px 5px 5px tomato;}
+    </style>
+        
+        
+</head>
+<body>
+    <div class="card">
+        <div class="inner-box">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+            <button onclick="Go()"> Go</button>
+            <button onclick="Wait()"> Wait</button>
+            <button onclick="Stop()"> Stop</button>
+        </div>
+    </div>
+    <script>
+        function Go(){
+            document.querySelectorAll("p")[0].style.backgroundColor="white";
+            document.querySelectorAll("p")[1].style.backgroundColor="white";
+            document.querySelectorAll("p")[2].style.backgroundColor="rgb(0, 255, 0)";
+        }
+        function Wait(){
+            document.querySelectorAll("p")[0].style.backgroundColor="white";
+            document.querySelectorAll("p")[1].style.backgroundColor="yellow";
+            document.querySelectorAll("p")[2].style.backgroundColor="white";
+        }
+        function Stop(){
+            document.querySelectorAll("p")[0].style.backgroundColor="rgb(255, 0, 0)";
+            document.querySelectorAll("p")[1].style.backgroundColor="white";
+            document.querySelectorAll("p")[2].style.backgroundColor="white";
+        }
+
+    </script>
+</body>
+</html>
